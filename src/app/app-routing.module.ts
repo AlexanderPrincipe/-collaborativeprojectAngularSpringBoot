@@ -6,7 +6,13 @@ import { FormComponent } from './components/form/form.component';
 const routes: Routes = [
   {path: '', redirectTo: 'customers', pathMatch: 'full'},
   {path: 'customers', component: CustomersComponent},
-  {path: 'form', component: FormComponent}
+  { path: 'form', component: FormComponent },
+  {
+    path: 'auth',
+    loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule)
+  },
+  {path:'**', redirectTo:'auth'}
+
 ];
 
 @NgModule({
