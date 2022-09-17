@@ -12,13 +12,15 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
 import { ReactiveFormsModule } from '@angular/forms';
+import { CarouselComponent } from './components/carousel/carousel.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     FormComponent,
-    CustomersComponent
+    CustomersComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,
